@@ -685,6 +685,29 @@ p {
   line-height: 1.5;
 }
 
+.systems-section .flow-svg {
+  display: block;
+  opacity: 0.12;
+}
+
+.systems-slider {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+}
+
+.solution-system-card {
+  padding: 1.05rem 1.1rem 1rem;
+}
+
+.solution-system-card .section-title {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.18rem, 2vw, 1.78rem);
+}
+
+.solution-system-card .impact-title {
+  margin-top: 0.5rem;
+}
+
 .skills-canvas-wrap {
   grid-column: 1 / -1;
   margin-top: 0.28rem;
@@ -968,6 +991,10 @@ p {
 
   .solution-title {
     font-size: 0.9rem;
+  }
+
+  .solution-system-card .section-title {
+    font-size: clamp(1.06rem, 4.6vw, 1.4rem);
   }
 
   .skills-canvas {

@@ -30,6 +30,7 @@
   const carousels = Array.from(document.querySelectorAll("[data-carousel]"));
   const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
   const sections = gsap.utils.toArray(".section");
+  const carouselAnchorMap = new Map();
   let lastY = window.scrollY;
 
   const updateHeaderState = () => {
@@ -70,14 +71,20 @@
       }
 
       event.preventDefault();
+      const carouselTarget = carouselAnchorMap.get(targetId);
+      const scrollTarget = carouselTarget ? carouselTarget.section : target;
+
+      if (carouselTarget) {
+        carouselTarget.moveTo();
+      }
 
       if (lenis) {
-        lenis.scrollTo(target, {
+        lenis.scrollTo(scrollTarget, {
           offset: -getHeaderOffset(),
           duration: 1.1
         });
       } else {
-        const top = target.getBoundingClientRect().top + window.pageYOffset - getHeaderOffset();
+        const top = scrollTarget.getBoundingClientRect().top + window.pageYOffset - getHeaderOffset();
         window.scrollTo({ top, behavior: "smooth" });
       }
     });
@@ -309,6 +316,15 @@
         track.style.transform = `translateX(-${index * 100}%)`;
       };
 
+      cards.forEach((card, cardIndex) => {
+        if (card.id) {
+          carouselAnchorMap.set(`#${card.id}`, {
+            section: carousel.closest(".section") || card,
+            moveTo: () => move(cardIndex)
+          });
+        }
+      });
+
       const stop = () => {
         if (timer) {
           window.clearInterval(timer);
@@ -343,6 +359,13 @@
       carousel.addEventListener("pointerup", start);
 
       start();
+
+      if (window.location.hash) {
+        const hashTarget = carouselAnchorMap.get(window.location.hash);
+        if (hashTarget) {
+          hashTarget.moveTo();
+        }
+      }
     });
   }
 
