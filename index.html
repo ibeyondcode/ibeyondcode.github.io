@@ -3,318 +3,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beyond Code LLC</title>
+  <title>Beyond Code LLC | Institutional AI Systems</title>
+  <meta name="description" content="Beyond Code LLC designs institutional AI systems for operational intelligence, reporting automation, and faster executive decisions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient" aria-hidden="true">
-    <div class="blob blob-1 parallax" data-depth="8"></div>
-    <div class="blob blob-2 parallax" data-depth="14"></div>
-    <div class="blob blob-3 parallax" data-depth="20"></div>
-    <div class="grid-overlay"></div>
+  <div class="site-bg" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="noise"></div>
+    <div class="grid"></div>
   </div>
 
-  <header class="top-header" id="top-header">
-    <div class="top-header-inner">
-      <a class="brand-link" href="#hero">Beyond Code LLC</a>
-      <nav class="site-nav" aria-label="Beyond Code LLC">
-        <a href="#about">ABOUT US</a>
-        <a href="#market">Market Analysis and Execution Challenges</a>
-        <a href="#system-1">Our Solution: System 1</a>
-        <a href="#system-2">Our Solution: System 2</a>
-        <a href="#services">Services and Expertise</a>
-        <a href="#process">The Process</a>
-        <a href="#leadership">Our Leadership</a>
-        <a href="#contact">Contact Information</a>
+  <header class="header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Beyond Code Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Beyond Code LLC</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#challenge">Challenge</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#process">Process</a>
+        <a href="#security">Security</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="site">
-    <section id="hero" class="section split reveal-section tone-a style-hero">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M8 26 C 110 80, 240 10, 410 58"></path>
-        <path d="M0 176 C 130 146, 280 208, 420 154"></path>
-      </svg>
-      <div class="section-main">
-        <p class="kicker stagger">Operational Intelligence and System Enhancement</p>
-        <h1 class="hero-title stagger">Enhancing Execution Through Intelligent Systems</h1>
-        <p class="stagger">Beyond Code</p>
-      </div>
-      <div class="section-side">
-        <p class="stagger">Beyond Code LLC</p>
-        <p class="stagger">Abu Dhab, UAE</p>
-
-        <div class="glyph" aria-hidden="true">
-          <span></span><span></span><span></span>
+  <main id="top">
+    <section class="hero section container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Institutional AI Systems</p>
+        <h1>Operational intelligence engineered for real execution.</h1>
+        <p class="lead">Beyond Code builds AI-native systems that reduce reporting friction, accelerate executive decisions, and improve organizational visibility.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#solutions">Explore Solutions</a>
+          <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+          <a class="btn btn-secondary" href="assets/pdfs/Beyond%20Code%20-%20Operational%20Intelligence%20Infrastructure.pdf" target="_blank" rel="noopener noreferrer">Download Company Profile</a>
         </div>
       </div>
-      <div class="data-ribbon">
-        <p class="ribbon-item stagger"><span class="ribbon-progress" data-progress="70"></span>Executive decision preparation time reduced by up to <span class="counter" data-target="50">50</span> - <span class="counter" data-target="70" data-suffix="%">70%</span></p>
-        <p class="ribbon-item stagger"><span class="ribbon-progress" data-progress="80"></span>Operational information retrieval time reduced by up to <span class="counter" data-target="60">60</span> - <span class="counter" data-target="80" data-suffix="%">80%</span></p>
-        <p class="ribbon-item stagger"><span class="ribbon-progress" data-progress="80"></span>Reporting preparation time reduced by up to <span class="counter" data-target="80" data-suffix="%">80%</span></p>
-        <p class="ribbon-item stagger"><span class="ribbon-progress ribbon-progress-x" data-progress="94"></span>Report generation speed increased by up to <span class="counter" data-target="15" data-suffix="x">15x</span></p>
-      </div>
-    </section>
-
-    <section id="about" class="section split reveal-section tone-b style-profile">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M0 68 C 120 12, 260 78, 420 22"></path>
-        <path d="M16 200 C 140 118, 280 200, 412 130"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">ABOUT US</h2>
-        <p class="stagger">Beyond Code was founded on years of independent work developing automation systems, reporting platforms, and workflow enhancement solutions across operational environments.</p>
-      </div>
-      <div class="section-side">
-        <figure class="section-icon-wrap stagger" aria-hidden="true">
-          <img class="section-icon" src="assets/images/icon-intelligence.svg" alt="">
-        </figure>
-        <p class="stagger">Beyond Code was established to address the structural gap between AI adoption and operational readiness by solving complex operational and reporting challenges through intelligent system design. Each system is structured to reflect the unique operational realities of the institution, ensuring practical deployment, long term reliability, and measurable operational improvement.</p>
-      </div>
-    </section>
-
-    <section id="market" class="section split reveal-section tone-c style-side-glow">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M4 42 C 120 98, 280 12, 410 72"></path>
-        <path d="M0 186 C 100 136, 288 200, 420 156"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">Market Analysis and Execution Challenges</h2>
-        <p class="statement stagger">The problem is not lack of technology.</p>
-        <p class="statement stagger">The problem is lack of operational intelligence.</p>
-        <p class="stagger">In the market, most institutions:</p>
-      </div>
-      <div class="section-side">
-        <ul class="text-list">
-          <li class="stagger">• Invest in digital tools without restructuring workflows</li>
-          <li class="stagger">• Implement dashboards without governance logic</li>
-          <li class="stagger">• Adopt AI features without measurable impact</li>
-          <li class="stagger">• Depend on manual reporting despite automation claims</li>
+      <aside class="hero-panel reveal" aria-label="Performance outcomes">
+        <h2>Proven Outcomes</h2>
+        <ul class="metric-list">
+          <li>
+            <p>Decision preparation time</p>
+            <strong><span class="count" data-target="70">0</span>% faster</strong>
+          </li>
+          <li>
+            <p>Information retrieval time</p>
+            <strong><span class="count" data-target="80">0</span>% faster</strong>
+          </li>
+          <li>
+            <p>Reporting preparation time</p>
+            <strong><span class="count" data-target="80">0</span>% reduction</strong>
+          </li>
+          <li>
+            <p>Report generation speed</p>
+            <strong><span class="count" data-target="15">0</span>x increase</strong>
+          </li>
         </ul>
-        <p class="stagger">Beyond Code addresses these gaps through operational intelligence systems designed for institutional environments.</p>
+      </aside>
+    </section>
+
+    <section id="about" class="section container two-col">
+      <div class="card reveal">
+        <p class="eyebrow">Who We Are</p>
+        <h2>Beyond Code bridges AI ambition and operational reality.</h2>
+        <p>We were founded to solve the execution gap inside institutions: AI initiatives often launch without workflow redesign, governance alignment, or measurable impact design.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Built for institutional environments</h3>
+        <ul class="clean-list">
+          <li>Workflow-integrated AI systems, not isolated demos</li>
+          <li>Deployment models aligned to data ownership and security</li>
+          <li>Operationally grounded architecture for long-term reliability</li>
+          <li>Measurable KPI impact from day one</li>
+        </ul>
       </div>
     </section>
 
-    <section id="system-1" class="section reveal-section tone-d style-carousel systems-section">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M0 82 C 128 18, 254 94, 418 36"></path>
-        <path d="M6 196 C 126 132, 278 208, 420 146"></path>
-      </svg>
-      <div class="solution-carousel stagger systems-slider" data-carousel>
-        <button class="carousel-arrow prev" type="button" aria-label="Previous system">&#8592;</button>
-        <div class="carousel-viewport">
-          <div class="carousel-track">
-            <article class="solution-card solution-system-card" id="system-1-card">
-              <h2 class="section-title">Our Solution: System 1</h2>
-              <p>Beyond Code Agentic Institutional Intelligence System</p>
-              <p class="impact-title">IMPACT:</p>
-              <ul class="text-list metric-list">
-                <li class="metric-item">Executive decision preparation time reduced by up to <span class="counter" data-target="50">50</span> - <span class="counter" data-target="70" data-suffix="%">70%</span><div class="metric-bar" data-progress="70"><span></span></div></li>
-                <li class="metric-item">Operational information retrieval time reduced by up to <span class="counter" data-target="60">60</span> - <span class="counter" data-target="80" data-suffix="%">80%</span><div class="metric-bar" data-progress="80"><span></span></div></li>
-                <li>Operational visibility improved from delayed reporting to real time access</li>
-                <li class="metric-item">Manual operational data retrieval reduced by up to <span class="counter" data-target="70">70</span> - <span class="counter" data-target="90" data-suffix="%">90%</span><div class="metric-bar" data-progress="90"><span></span></div></li>
-                <li class="metric-item">Institutional responsiveness significantly improved by up to <span class="counter" data-target="60" data-suffix="%">60%</span><div class="metric-bar" data-progress="60"><span></span></div></li>
-              </ul>
-            </article>
-            <article class="solution-card solution-system-card" id="system-2">
-              <h2 class="section-title">Our Solution: System 2</h2>
-              <p>Beyond Code Institutional Policy Linked Reporting System</p>
-              <p class="impact-title">IMPACT:</p>
-              <ul class="text-list metric-list">
-                <li class="metric-item">Reporting preparation time reduced by up to <span class="counter" data-target="80" data-suffix="%">80%</span><div class="metric-bar" data-progress="80"><span></span></div></li>
-                <li class="metric-item">Manual reporting workload reduced by up to <span class="counter" data-target="85" data-suffix="%">85%</span><div class="metric-bar" data-progress="85"><span></span></div></li>
-                <li>Report generation speed increased by up to <span class="counter" data-target="15" data-suffix="x">15x</span></li>
-              </ul>
-            </article>
+    <section id="challenge" class="section container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Market Reality</p>
+        <h2>The blocker is execution intelligence, not technology access.</h2>
+      </div>
+      <div class="chips reveal">
+        <article class="chip">Digital tools launched without workflow redesign</article>
+        <article class="chip">Dashboards deployed without governance logic</article>
+        <article class="chip">AI features added without impact accountability</article>
+        <article class="chip">Manual reporting persists despite automation spend</article>
+      </div>
+    </section>
+
+    <section id="solutions" class="section container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Solutions</p>
+        <h2>Two systems designed to transform execution quality.</h2>
+      </div>
+      <div class="solution-grid">
+        <article class="solution card reveal">
+          <h3>System 1: Agentic Institutional Intelligence</h3>
+          <p>A decision-support layer that connects operations, context, and priorities for faster leadership response.</p>
+          <ul class="clean-list compact">
+            <li>Reduced manual operational retrieval by 70-90%</li>
+            <li>Improved institutional responsiveness by up to 60%</li>
+            <li>Shift from delayed reports to real-time visibility</li>
+          </ul>
+        </article>
+        <article class="solution card reveal">
+          <h3>System 2: Policy-Linked Reporting Intelligence</h3>
+          <p>An automated reporting framework aligned with institutional policy, compliance, and governance requirements.</p>
+          <ul class="clean-list compact">
+            <li>Reduced reporting workload by up to 85%</li>
+            <li>Cut preparation time by up to 80%</li>
+            <li>Increased generation speed up to 15x</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Core Capabilities</p>
+        <h2>Architecture, intelligence, automation, and deployment.</h2>
+      </div>
+      <div class="capability-grid">
+        <article class="cap reveal">
+          <h3>Intelligence Systems</h3>
+          <p>LLM/ML-powered analysis, forecasting, and workflow-aware assistants.</p>
+        </article>
+        <article class="cap reveal">
+          <h3>Operational Control</h3>
+          <p>Real-time monitoring, internal dashboards, and knowledge intelligence systems.</p>
+        </article>
+        <article class="cap reveal">
+          <h3>Execution Automation</h3>
+          <p>Automated reporting, retrieval, and workflow-integrated AI operations.</p>
+        </article>
+        <article class="cap reveal">
+          <h3>Deployment Models</h3>
+          <p>Private cloud, on-premise, and hybrid setups with institution-owned data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Delivery Process</p>
+        <h2>A four-stage execution model for reliable adoption.</h2>
+      </div>
+      <ol class="timeline reveal">
+        <li>
+          <span>01</span>
+          <div>
+            <h3>Diagnose</h3>
+            <p>Assess workflows, reporting structures, and execution gaps.</p>
           </div>
-        </div>
-        <button class="carousel-arrow next" type="button" aria-label="Next system">&#8594;</button>
+        </li>
+        <li>
+          <span>02</span>
+          <div>
+            <h3>Structure</h3>
+            <p>Design architecture, governance logic, and decision pathways.</p>
+          </div>
+        </li>
+        <li>
+          <span>03</span>
+          <div>
+            <h3>Engineer</h3>
+            <p>Build AI systems and intelligence infrastructure around operations.</p>
+          </div>
+        </li>
+        <li>
+          <span>04</span>
+          <div>
+            <h3>Deploy</h3>
+            <p>Integrate, configure, and operationalize with measurable adoption KPIs.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="security" class="section container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Security and Ownership</p>
+        <h2>Infrastructure control remains with the institution.</h2>
+      </div>
+      <div class="security-grid">
+        <article class="card reveal">
+          <h3>Institution Owns</h3>
+          <ul class="clean-list compact">
+            <li>Infrastructure and hosting environment</li>
+            <li>Institutional systems and access controls</li>
+            <li>All institutional data and records</li>
+            <li>Deployment model choice: private cloud, on-premise, hybrid</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <h3>Beyond Code Provides</h3>
+          <ul class="clean-list compact">
+            <li>AI software architecture and intelligence layers</li>
+            <li>System configuration and deployment support</li>
+            <li>Operational hardening and governance alignment</li>
+            <li>Continuous improvements and maintenance</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="impact-analysis" class="section split reveal-section tone-b style-min">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M0 74 C 130 6, 290 82, 420 26"></path>
-        <path d="M4 198 C 136 122, 280 214, 418 144"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">INSTITUTIONAL IMPACT ANALYSIS</h2>
+    <section id="leadership" class="section container two-col">
+      <div class="card reveal profile">
+        <p class="eyebrow">Leadership</p>
+        <h3>Reem Aljneibi</h3>
+        <p>Founder & Chief Executive Officer</p>
+        <p class="muted">Operational Intelligence and Systems Strategist</p>
       </div>
-      <div class="section-side">
-        <ul class="text-list">
-          <li class="stagger">Reduction in operational delays</li>
-          <li class="stagger">Reduced manual reporting</li>
-          <li class="stagger">Increased operational visibility</li>
-          <li class="stagger">Accelerated executive decision readiness</li>
-        </ul>
+      <div class="card reveal profile">
+        <p class="eyebrow">Technology</p>
+        <h3>Mohammed Alyafaei</h3>
+        <p>Chief Technology Officer</p>
+        <p class="muted">Intelligent Systems and AI Infrastructure Architect</p>
       </div>
     </section>
 
-    <section id="services" class="section split reveal-section tone-c style-points">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M6 40 C 124 102, 278 8, 420 78"></path>
-        <path d="M0 184 C 114 132, 284 204, 420 150"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">Services and Expertise</h2>
-        <ul class="text-list feature-list">
-          <li class="stagger">Intelligence and Predictive Systems (LLM &amp; ML)</li>
-          <li class="stagger">Predictive Analysis &amp; Forecasting Models</li>
-          <li class="stagger">Operational Intelligence and Reporting Systems</li>
-          <li class="stagger">Real Time Operational Monitoring Systems</li>
-          <li class="stagger">Internal Intelligence Dashboards</li>
-          <li class="stagger">Organizational Knowledge Intelligence Systems</li>
-        </ul>
-      </div>
-      <div class="section-side">
-        <ul class="text-list feature-list">
-          <li class="stagger">Automation and Intelligence Systems</li>
-          <li class="stagger">Automated Reporting, Retrieval, and Execution Systems</li>
-          <li class="stagger">Workflow-Integrated AI Assistants</li>
-          <li class="stagger">Operational and Classification Intelligence</li>
-          <li class="stagger">Custom Intelligence System Development</li>
-          <li class="stagger">Agentic AI and Autonomous Intelligence Systems</li>
-        </ul>
-      </div>
-      <div class="skills-canvas-wrap stagger">
-        <div class="skills-canvas" id="skillsCanvas">
-          <p class="skills-center" id="skillsCenter">Technology Stack and Infrastructure</p>
-        </div>
+    <section id="contact" class="section container contact">
+      <div class="card reveal contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s design your institutional AI execution layer.</h2>
+        <form id="contactForm" class="contact-form">
+          <label>
+            Full Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Company
+            <input type="text" name="company" required>
+          </label>
+          <label>
+            Work Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Use Case
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <p class="form-note muted" id="formNote">This opens your email app and prepares a message to our team.</p>
+        </form>
+        <p><a href="mailto:info@beyondcode.ae">info@beyondcode.ae</a></p>
+        <p><a href="http://www.beyondcode.ae" target="_blank" rel="noopener noreferrer">www.beyondcode.ae</a></p>
+        <p class="muted">Beyond Code LLC, Abu Dhabi, UAE</p>
       </div>
     </section>
-
-    <section id="deliverables" class="section reveal-section tone-a style-deliverables">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M2 34 C 124 88, 282 14, 418 58"></path>
-        <path d="M0 176 C 122 130, 282 198, 420 148"></path>
-      </svg>
-      <h2 class="section-title stagger">Deliverables</h2>
-      <div class="deliverables-grid">
-        <article class="deliverable-card stagger">Institutional AI Assistants</article>
-        <article class="deliverable-card stagger">Workflow Automation and Execution Enhancement</article>
-        <article class="deliverable-card stagger">Systems Integration and Operational Alignment</article>
-        <article class="deliverable-card stagger">Operational Intelligence Systems</article>
-        <article class="deliverable-card stagger">Enterprise Reporting Infrastructure</article>
-      </div>
-    </section>
-
-    <section id="process" class="section split reveal-section tone-b style-steps">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M0 78 C 130 12, 274 80, 420 28"></path>
-        <path d="M8 200 C 130 130, 294 216, 418 142"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">The Process</h2>
-        <ul class="text-list process-list">
-          <li class="stagger"><strong>1. DIAGNOSE</strong><br>Assess operational workflows, reporting structures, and execution gaps</li>
-          <li class="stagger"><strong>2. STRUCTURE</strong><br>Design operational architecture, governance logic, and system framework</li>
-        </ul>
-      </div>
-      <div class="section-side">
-        <ul class="text-list process-list">
-          <li class="stagger"><strong>3. ENGINEER</strong><br>Develop AI systems, operational intelligence systems, and infrastructure</li>
-          <li class="stagger"><strong>4. DEPLOY</strong><br>Develop and configure AI systems and intelligence tools</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="deployment" class="section split reveal-section tone-c style-side-glow">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M2 42 C 116 94, 280 6, 418 72"></path>
-        <path d="M0 184 C 126 124, 294 206, 420 150"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">Deployment Architecture and Infrastructure Model</h2>
-      </div>
-      <div class="section-side">
-        <ul class="text-list">
-          <li class="stagger">Private Cloud Deployment</li>
-          <li class="stagger">On-Premise Deployment</li>
-          <li class="stagger">Hybrid Deployment</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="ownership" class="section split reveal-section tone-d style-band">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M0 74 C 120 10, 276 92, 418 32"></path>
-        <path d="M8 196 C 130 120, 284 206, 420 148"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">Infrastructure Ownership and Data Security Model</h2>
-        <h3 class="group-title stagger">INSTITUTION OWNS</h3>
-        <ul class="text-list">
-          <li class="stagger">INFRASTRUCTURE</li>
-          <li class="stagger">SERVERS</li>
-          <li class="stagger">CLOUD ENVIRONMENT</li>
-          <li class="stagger">INSTITUTIONAL SYSTEMS</li>
-          <li class="stagger">INSTITUTIONAL DATA</li>
-        </ul>
-      </div>
-      <div class="section-side">
-        <h3 class="group-title stagger">BEYOND CODE PROVIDES</h3>
-        <ul class="text-list">
-          <li class="stagger">INTELLIGENCE SYSTEM SOFTWARE</li>
-          <li class="stagger">DEPLOYMENT SUPPORT</li>
-          <li class="stagger">SYSTEM CONFIGURATION</li>
-          <li class="stagger">MAINTENANCE AND UPDATES</li>
-          <li class="stagger">INNOVATIVE SOLUTIONS</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="leadership" class="section split reveal-section tone-a style-profile">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M0 30 C 120 78, 280 16, 416 56"></path>
-        <path d="M8 178 C 132 132, 286 196, 420 144"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">Our Leadership</h2>
-        <p class="leader-name stagger">Reem Aljneibi</p>
-        <p class="stagger">Founder &amp; Chief Executive Officer</p>
-        <p class="stagger">Operational Intelligence and Systems Strategist</p>
-      </div>
-      <div class="section-side">
-        <figure class="section-icon-wrap stagger" aria-hidden="true">
-          <img class="section-icon" src="assets/images/icon-leadership.svg" alt="">
-        </figure>
-        <p class="leader-name stagger">Mohammed Alyafaei</p>
-        <p class="stagger">Chief Technology Officer</p>
-        <p class="stagger">Intelligent Systems and AI Infrastructure Architect</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section split reveal-section tone-b style-clean">
-      <svg class="flow-svg" viewBox="0 0 420 220" aria-hidden="true">
-        <path d="M0 72 C 114 14, 292 84, 420 30"></path>
-        <path d="M6 190 C 130 132, 286 208, 420 146"></path>
-      </svg>
-      <div class="section-main">
-        <h2 class="section-title stagger">Contact Information</h2>
-        <p class="stagger"><a href="mailto:info@beyondcode.ae">info@beyondcode.ae</a></p>
-        <p class="stagger"><a href="http://www.beyondcode.ae" target="_blank" rel="noopener noreferrer">www.beyondcode.ae</a></p>
-      </div>
-      <div class="section-side">
-        <p class="stagger">Beyond Code LLC</p>
-        <p class="stagger">Abu Dhab, UAE</p>
-      </div>
-    </section>
-
-    <footer class="site-footer reveal-section tone-c" id="footer">
-      <p class="stagger"><a href="mailto:info@beyondcode.ae">info@beyondcode.ae</a></p>
-      <p class="stagger"><a href="http://www.beyondcode.ae" target="_blank" rel="noopener noreferrer">www.beyondcode.ae</a></p>
-      <p class="stagger">Beyond Code LLC</p>
-      <p class="stagger">Abu Dhab, UAE</p>
-    </footer>
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p>Beyond Code LLC</p>
+      <p>Institutional AI Systems for operational intelligence and reporting execution.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
+
