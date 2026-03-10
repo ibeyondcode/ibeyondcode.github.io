@@ -128,6 +128,12 @@ p {
   min-height: 4rem;
 }
 
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
 .brand {
   text-decoration: none;
   color: var(--text);
@@ -145,6 +151,29 @@ p {
   border-radius: 50%;
   background: linear-gradient(120deg, #d8e6fb, #9cb9e2);
   box-shadow: 0 0 20px rgba(167, 197, 238, 0.46);
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(9, 18, 30, 0.76);
+}
+
+.lang-btn {
+  border: 0;
+  padding: 0.3rem 0.65rem;
+  background: transparent;
+  color: #d3e2f8;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: rgba(185, 214, 255, 0.22);
+  color: #fff;
 }
 
 .nav {
@@ -200,12 +229,12 @@ p {
 
 .hero h1 {
   font-size: clamp(2rem, 6.4vw, 4.8rem);
-  max-width: 11ch;
+  max-width: 14ch;
 }
 
 .lead {
   font-size: clamp(1rem, 1.6vw, 1.18rem);
-  max-width: 55ch;
+  max-width: 62ch;
 }
 
 .hero-actions {
@@ -479,6 +508,37 @@ p {
 .reveal.in {
   opacity: 1;
   transform: translateY(0);
+}
+
+html[dir="rtl"] body {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+html[dir="rtl"] .nav-wrap {
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav,
+html[dir="rtl"] .hero-copy,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .card,
+html[dir="rtl"] .contact-form,
+html[dir="rtl"] .footer {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-actions {
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .clean-list li {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+html[dir="rtl"] .clean-list li::before {
+  left: auto;
+  right: 0;
 }
 
 @media (max-width: 1080px) {

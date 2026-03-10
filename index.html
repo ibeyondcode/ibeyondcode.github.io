@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beyond Code LLC | Institutional AI Systems</title>
-  <meta name="description" content="Beyond Code LLC designs institutional AI systems for operational intelligence, reporting automation, and faster executive decisions.">
+  <title>Beyond Code | AI Operational Intelligence Infrastructure</title>
+  <meta name="description" content="Beyond Code builds AI operational intelligence infrastructure for institutional execution, reporting automation, and faster decisions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,18 +22,26 @@
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Beyond Code Home">
         <span class="brand-dot" aria-hidden="true"></span>
-        <span>Beyond Code LLC</span>
+        <span data-i18n="brand.name">Beyond Code</span>
       </a>
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">Menu</button>
+
+      <div class="header-controls">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="ar">AR</button>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" data-i18n="nav.menu">Menu</button>
+      </div>
+
       <nav class="nav" id="siteNav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#challenge">Challenge</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#process">Process</a>
-        <a href="#security">Security</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#challenge" data-i18n="nav.challenge">Challenge</a>
+        <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
+        <a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#security" data-i18n="nav.security">Security</a>
+        <a href="#leadership" data-i18n="nav.leadership">Leadership</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -41,33 +49,34 @@
   <main id="top">
     <section class="hero section container">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Institutional AI Systems</p>
-        <h1>Operational intelligence engineered for real execution.</h1>
-        <p class="lead">Beyond Code builds AI-native systems that reduce reporting friction, accelerate executive decisions, and improve organizational visibility.</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">What Beyond Code Does</p>
+        <h1 data-i18n="hero.title">Beyond Code builds AI infrastructure for operational execution.</h1>
+        <p class="lead" data-i18n="hero.lead">We design operational intelligence systems for institutions to automate reporting, improve visibility, and accelerate executive decision-making.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#solutions">Explore Solutions</a>
-          <a class="btn btn-ghost" href="#contact">Talk to Us</a>
-          <a class="btn btn-secondary" href="assets/pdfs/Beyond%20Code%20-%20Operational%20Intelligence%20Infrastructure.pdf" target="_blank" rel="noopener noreferrer">Download Company Profile</a>
+          <a class="btn btn-primary" href="#solutions" data-i18n="hero.ctaSolutions">Explore Solutions</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Talk to Us</a>
+          <a class="btn btn-secondary" href="assets/pdfs/Beyond%20Code%20-%20Operational%20Intelligence%20Infrastructure.pdf" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaDownload">Download Company Profile (PDF)</a>
         </div>
       </div>
+
       <aside class="hero-panel reveal" aria-label="Performance outcomes">
-        <h2>Proven Outcomes</h2>
+        <h2 data-i18n="metric.title">Operational Results</h2>
         <ul class="metric-list">
           <li>
-            <p>Decision preparation time</p>
-            <strong><span class="count" data-target="70">0</span>% faster</strong>
+            <p data-i18n="metric.decisionLabel">Decision preparation time</p>
+            <strong><span class="count" data-target="70">0</span><span data-i18n="metric.decisionSuffix">% faster</span></strong>
           </li>
           <li>
-            <p>Information retrieval time</p>
-            <strong><span class="count" data-target="80">0</span>% faster</strong>
+            <p data-i18n="metric.infoLabel">Information retrieval time</p>
+            <strong><span class="count" data-target="80">0</span><span data-i18n="metric.infoSuffix">% faster</span></strong>
           </li>
           <li>
-            <p>Reporting preparation time</p>
-            <strong><span class="count" data-target="80">0</span>% reduction</strong>
+            <p data-i18n="metric.reportLabel">Reporting preparation time</p>
+            <strong><span class="count" data-target="80">0</span><span data-i18n="metric.reportSuffix">% reduction</span></strong>
           </li>
           <li>
-            <p>Report generation speed</p>
-            <strong><span class="count" data-target="15">0</span>x increase</strong>
+            <p data-i18n="metric.speedLabel">Report generation speed</p>
+            <strong><span class="count" data-target="15">0</span><span data-i18n="metric.speedSuffix">x increase</span></strong>
           </li>
         </ul>
       </aside>
@@ -75,56 +84,56 @@
 
     <section id="about" class="section container two-col">
       <div class="card reveal">
-        <p class="eyebrow">Who We Are</p>
-        <h2>Beyond Code bridges AI ambition and operational reality.</h2>
-        <p>We were founded to solve the execution gap inside institutions: AI initiatives often launch without workflow redesign, governance alignment, or measurable impact design.</p>
+        <p class="eyebrow" data-i18n="about.eyebrow">Who We Are</p>
+        <h2 data-i18n="about.title">Beyond Code bridges AI ambition and operational reality.</h2>
+        <p data-i18n="about.body">We solve the execution gap inside institutions where AI initiatives launch without workflow redesign, governance alignment, or measurable impact.</p>
       </div>
       <div class="card reveal">
-        <h3>Built for institutional environments</h3>
+        <h3 data-i18n="about.cardTitle">Built for institutional environments</h3>
         <ul class="clean-list">
-          <li>Workflow-integrated AI systems, not isolated demos</li>
-          <li>Deployment models aligned to data ownership and security</li>
-          <li>Operationally grounded architecture for long-term reliability</li>
-          <li>Measurable KPI impact from day one</li>
+          <li data-i18n="about.item1">Workflow-integrated AI systems, not isolated demos</li>
+          <li data-i18n="about.item2">Deployment models aligned to data ownership and security</li>
+          <li data-i18n="about.item3">Operationally grounded architecture for long-term reliability</li>
+          <li data-i18n="about.item4">Measurable impact from day one</li>
         </ul>
       </div>
     </section>
 
     <section id="challenge" class="section container">
       <div class="section-heading reveal">
-        <p class="eyebrow">Market Reality</p>
-        <h2>The blocker is execution intelligence, not technology access.</h2>
+        <p class="eyebrow" data-i18n="challenge.eyebrow">Market Reality</p>
+        <h2 data-i18n="challenge.title">The blocker is execution intelligence, not technology access.</h2>
       </div>
       <div class="chips reveal">
-        <article class="chip">Digital tools launched without workflow redesign</article>
-        <article class="chip">Dashboards deployed without governance logic</article>
-        <article class="chip">AI features added without impact accountability</article>
-        <article class="chip">Manual reporting persists despite automation spend</article>
+        <article class="chip" data-i18n="challenge.item1">Digital tools launched without workflow redesign</article>
+        <article class="chip" data-i18n="challenge.item2">Dashboards deployed without governance logic</article>
+        <article class="chip" data-i18n="challenge.item3">AI features added without impact accountability</article>
+        <article class="chip" data-i18n="challenge.item4">Manual reporting persists despite automation spend</article>
       </div>
     </section>
 
     <section id="solutions" class="section container">
       <div class="section-heading reveal">
-        <p class="eyebrow">Solutions</p>
-        <h2>Two systems designed to transform execution quality.</h2>
+        <p class="eyebrow" data-i18n="solutions.eyebrow">Solutions</p>
+        <h2 data-i18n="solutions.title">Two systems designed to transform execution quality.</h2>
       </div>
       <div class="solution-grid">
         <article class="solution card reveal">
-          <h3>System 1: Agentic Institutional Intelligence</h3>
-          <p>A decision-support layer that connects operations, context, and priorities for faster leadership response.</p>
+          <h3 data-i18n="solutions.s1Title">System 1: Agentic Institutional Intelligence</h3>
+          <p data-i18n="solutions.s1Body">A decision-support layer that connects operations, context, and priorities for faster leadership response.</p>
           <ul class="clean-list compact">
-            <li>Reduced manual operational retrieval by 70-90%</li>
-            <li>Improved institutional responsiveness by up to 60%</li>
-            <li>Shift from delayed reports to real-time visibility</li>
+            <li data-i18n="solutions.s1Item1">Reduced manual operational retrieval by 70-90%</li>
+            <li data-i18n="solutions.s1Item2">Improved institutional responsiveness by up to 60%</li>
+            <li data-i18n="solutions.s1Item3">Shift from delayed reports to real-time visibility</li>
           </ul>
         </article>
         <article class="solution card reveal">
-          <h3>System 2: Policy-Linked Reporting Intelligence</h3>
-          <p>An automated reporting framework aligned with institutional policy, compliance, and governance requirements.</p>
+          <h3 data-i18n="solutions.s2Title">System 2: Policy-Linked Reporting Intelligence</h3>
+          <p data-i18n="solutions.s2Body">An automated reporting framework aligned with institutional policy, compliance, and governance requirements.</p>
           <ul class="clean-list compact">
-            <li>Reduced reporting workload by up to 85%</li>
-            <li>Cut preparation time by up to 80%</li>
-            <li>Increased generation speed up to 15x</li>
+            <li data-i18n="solutions.s2Item1">Reduced reporting workload by up to 85%</li>
+            <li data-i18n="solutions.s2Item2">Cut preparation time by up to 80%</li>
+            <li data-i18n="solutions.s2Item3">Increased generation speed up to 15x</li>
           </ul>
         </article>
       </div>
@@ -132,61 +141,61 @@
 
     <section id="capabilities" class="section container">
       <div class="section-heading reveal">
-        <p class="eyebrow">Core Capabilities</p>
-        <h2>Architecture, intelligence, automation, and deployment.</h2>
+        <p class="eyebrow" data-i18n="cap.eyebrow">Core Capabilities</p>
+        <h2 data-i18n="cap.title">Architecture, intelligence, automation, and deployment.</h2>
       </div>
       <div class="capability-grid">
         <article class="cap reveal">
-          <h3>Intelligence Systems</h3>
-          <p>LLM/ML-powered analysis, forecasting, and workflow-aware assistants.</p>
+          <h3 data-i18n="cap.c1Title">Intelligence Systems</h3>
+          <p data-i18n="cap.c1Body">LLM/ML-powered analysis, forecasting, and workflow-aware assistants.</p>
         </article>
         <article class="cap reveal">
-          <h3>Operational Control</h3>
-          <p>Real-time monitoring, internal dashboards, and knowledge intelligence systems.</p>
+          <h3 data-i18n="cap.c2Title">Operational Control</h3>
+          <p data-i18n="cap.c2Body">Real-time monitoring, internal dashboards, and knowledge intelligence systems.</p>
         </article>
         <article class="cap reveal">
-          <h3>Execution Automation</h3>
-          <p>Automated reporting, retrieval, and workflow-integrated AI operations.</p>
+          <h3 data-i18n="cap.c3Title">Execution Automation</h3>
+          <p data-i18n="cap.c3Body">Automated reporting, retrieval, and workflow-integrated AI operations.</p>
         </article>
         <article class="cap reveal">
-          <h3>Deployment Models</h3>
-          <p>Private cloud, on-premise, and hybrid setups with institution-owned data.</p>
+          <h3 data-i18n="cap.c4Title">Deployment Models</h3>
+          <p data-i18n="cap.c4Body">Private cloud, on-premise, and hybrid setups with institution-owned data.</p>
         </article>
       </div>
     </section>
 
     <section id="process" class="section container">
       <div class="section-heading reveal">
-        <p class="eyebrow">Delivery Process</p>
-        <h2>A four-stage execution model for reliable adoption.</h2>
+        <p class="eyebrow" data-i18n="process.eyebrow">Delivery Process</p>
+        <h2 data-i18n="process.title">A four-stage execution model for reliable adoption.</h2>
       </div>
       <ol class="timeline reveal">
         <li>
           <span>01</span>
           <div>
-            <h3>Diagnose</h3>
-            <p>Assess workflows, reporting structures, and execution gaps.</p>
+            <h3 data-i18n="process.p1Title">Diagnose</h3>
+            <p data-i18n="process.p1Body">Assess workflows, reporting structures, and execution gaps.</p>
           </div>
         </li>
         <li>
           <span>02</span>
           <div>
-            <h3>Structure</h3>
-            <p>Design architecture, governance logic, and decision pathways.</p>
+            <h3 data-i18n="process.p2Title">Structure</h3>
+            <p data-i18n="process.p2Body">Design architecture, governance logic, and decision pathways.</p>
           </div>
         </li>
         <li>
           <span>03</span>
           <div>
-            <h3>Engineer</h3>
-            <p>Build AI systems and intelligence infrastructure around operations.</p>
+            <h3 data-i18n="process.p3Title">Engineer</h3>
+            <p data-i18n="process.p3Body">Build AI systems and intelligence infrastructure around operations.</p>
           </div>
         </li>
         <li>
           <span>04</span>
           <div>
-            <h3>Deploy</h3>
-            <p>Integrate, configure, and operationalize with measurable adoption KPIs.</p>
+            <h3 data-i18n="process.p4Title">Deploy</h3>
+            <p data-i18n="process.p4Body">Integrate, configure, and operationalize with measurable adoption KPIs.</p>
           </div>
         </li>
       </ol>
@@ -194,26 +203,26 @@
 
     <section id="security" class="section container">
       <div class="section-heading reveal">
-        <p class="eyebrow">Security and Ownership</p>
-        <h2>Infrastructure control remains with the institution.</h2>
+        <p class="eyebrow" data-i18n="security.eyebrow">Security and Ownership</p>
+        <h2 data-i18n="security.title">Infrastructure control remains with the institution.</h2>
       </div>
       <div class="security-grid">
         <article class="card reveal">
-          <h3>Institution Owns</h3>
+          <h3 data-i18n="security.ownsTitle">Institution Owns</h3>
           <ul class="clean-list compact">
-            <li>Infrastructure and hosting environment</li>
-            <li>Institutional systems and access controls</li>
-            <li>All institutional data and records</li>
-            <li>Deployment model choice: private cloud, on-premise, hybrid</li>
+            <li data-i18n="security.owns1">Infrastructure and hosting environment</li>
+            <li data-i18n="security.owns2">Institutional systems and access controls</li>
+            <li data-i18n="security.owns3">All institutional data and records</li>
+            <li data-i18n="security.owns4">Deployment model choice: private cloud, on-premise, hybrid</li>
           </ul>
         </article>
         <article class="card reveal">
-          <h3>Beyond Code Provides</h3>
+          <h3 data-i18n="security.providesTitle">Beyond Code Provides</h3>
           <ul class="clean-list compact">
-            <li>AI software architecture and intelligence layers</li>
-            <li>System configuration and deployment support</li>
-            <li>Operational hardening and governance alignment</li>
-            <li>Continuous improvements and maintenance</li>
+            <li data-i18n="security.provides1">AI software architecture and intelligence layers</li>
+            <li data-i18n="security.provides2">System configuration and deployment support</li>
+            <li data-i18n="security.provides3">Operational hardening and governance alignment</li>
+            <li data-i18n="security.provides4">Continuous improvements and maintenance</li>
           </ul>
         </article>
       </div>
@@ -221,58 +230,59 @@
 
     <section id="leadership" class="section container two-col">
       <div class="card reveal profile">
-        <p class="eyebrow">Leadership</p>
+        <p class="eyebrow" data-i18n="leadership.eyebrow">Leadership</p>
         <h3>Reem Aljneibi</h3>
-        <p>Founder & Chief Executive Officer</p>
-        <p class="muted">Operational Intelligence and Systems Strategist</p>
+        <p data-i18n="leadership.ceoRole">Founder & Chief Executive Officer</p>
+        <p class="muted" data-i18n="leadership.ceoDesc">Operational Intelligence and Systems Strategist</p>
       </div>
       <div class="card reveal profile">
-        <p class="eyebrow">Technology</p>
+        <p class="eyebrow" data-i18n="leadership.tech">Technology</p>
         <h3>Mohammed Alyafaei</h3>
-        <p>Chief Technology Officer</p>
-        <p class="muted">Intelligent Systems and AI Infrastructure Architect</p>
+        <p data-i18n="leadership.ctoRole">Chief Technology Officer</p>
+        <p class="muted" data-i18n="leadership.ctoDesc">Intelligent Systems and AI Infrastructure Architect</p>
       </div>
     </section>
 
     <section id="contact" class="section container contact">
       <div class="card reveal contact-card">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s design your institutional AI execution layer.</h2>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n="contact.title">Let’s design your institutional AI execution layer.</h2>
+
         <form id="contactForm" class="contact-form">
           <label>
-            Full Name
+            <span data-i18n="contact.name">Full Name</span>
             <input type="text" name="name" required>
           </label>
           <label>
-            Company
+            <span data-i18n="contact.company">Company</span>
             <input type="text" name="company" required>
           </label>
           <label>
-            Work Email
+            <span data-i18n="contact.email">Work Email</span>
             <input type="email" name="email" required>
           </label>
           <label>
-            Use Case
+            <span data-i18n="contact.usecase">Use Case</span>
             <textarea name="message" rows="5" required></textarea>
           </label>
-          <button class="btn btn-primary" type="submit">Send Inquiry</button>
-          <p class="form-note muted" id="formNote">This opens your email app and prepares a message to our team.</p>
+          <button class="btn btn-primary" type="submit" data-i18n="contact.submit">Send Inquiry</button>
+          <p class="form-note muted" id="formNote" data-i18n="contact.note">This opens your email app and prepares a message to our team.</p>
         </form>
+
         <p><a href="mailto:info@beyondcode.ae">info@beyondcode.ae</a></p>
         <p><a href="http://www.beyondcode.ae" target="_blank" rel="noopener noreferrer">www.beyondcode.ae</a></p>
-        <p class="muted">Beyond Code LLC, Abu Dhabi, UAE</p>
+        <p class="muted" data-i18n="contact.location">Beyond Code, Abu Dhabi, UAE</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>Beyond Code LLC</p>
-      <p>Institutional AI Systems for operational intelligence and reporting execution.</p>
+      <p data-i18n="footer.name">Beyond Code</p>
+      <p data-i18n="footer.tagline">AI operational intelligence infrastructure for institutional execution and reporting automation.</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-

@@ -1,7 +1,0 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
-  <path d="M80 20L127 46V114L80 140L33 114V46L80 20Z" stroke="#b8d9ff" stroke-opacity="0.8" stroke-width="2"/>
-  <path d="M80 20V140" stroke="#b8d9ff" stroke-opacity="0.72" stroke-width="2"/>
-  <path d="M33 46L80 72L127 46" stroke="#94f0dc" stroke-opacity="0.84" stroke-width="2"/>
-  <path d="M33 114L80 88L127 114" stroke="#94f0dc" stroke-opacity="0.84" stroke-width="2"/>
-  <circle cx="80" cy="80" r="8" fill="#dff1ff"/>
-</svg>
